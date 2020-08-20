@@ -18,6 +18,8 @@ Discovering React's advanced techiques
 - Project Setup (using create-react-app)
 - Using Sass Stylesheet
 - Bulma CSS Framework
+- React Patterns
+- HOC
 
 ## Setup
 
@@ -33,14 +35,6 @@ $ npm start
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm run storybook`
-
-Runs the storybook in the development mode.<br />
-Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.

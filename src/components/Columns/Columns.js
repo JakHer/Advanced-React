@@ -8,12 +8,13 @@ const Columns = () => {
   return (
     <div className={(cx("columns"), styles.Columns)}>
       {collapsed && (
-        <button onClick={() => isCollapsed(false)} className="button ml-3 mb-3">
+        <button onClick={() => isCollapsed(false)} className="button">
           Show
         </button>
       )}
+
       {!collapsed && (
-        <button onClick={() => isCollapsed(true)} className="button ml-3 mb-3">
+        <button onClick={() => isCollapsed(true)} className="button">
           Hide
         </button>
       )}

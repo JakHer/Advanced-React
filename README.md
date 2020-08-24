@@ -20,7 +20,7 @@ Discovering React's advanced techiques
 - Bulma CSS Framework
 - React Patterns
 - HOC
-- React Hooks
+- React Hooks (useState)
 
 ## Setup
 

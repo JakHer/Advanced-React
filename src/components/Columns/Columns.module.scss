@@ -1,6 +1,7 @@
 .Columns {
   flex-direction: column;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .Column {
@@ -9,4 +10,5 @@
 
 .SubTitle {
   text-align: center;
+  padding: 0 0.75rem;
 }

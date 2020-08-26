@@ -6,21 +6,21 @@ import Tips from "../../views/Tips";
 import cx from "classnames";
 
 const Header = () => (
-  <div>
-    <div>
-      <h1>React's magic</h1>
-      <p>React is awesome</p>
+  <div className={cx("hero is-primary is-fluid", styles.Hero)}>
+    <div className={cx("hero-body has-text-centered")}>
+      <h1 className="title is-center">React's magic</h1>
+      <p className="subtitle">React is awesome</p>
     </div>
-    <nav className={cx("navbar")} role="navigation" aria-label="main navigation">
-      <ul className="navbar-start">
+    <nav className={cx("navbar is-expanded", styles.NavBar)} role="navigation" aria-label="main navigation">
+      <ul className={cx(styles.NavBar)}>
         <li>
-          <NavLink activeClassName={styles.NavLinkActive} exact to="/" className="navbar-item">
+          <NavLink activeClassName="is-active" exact to="/" className="navbar-item navbar-start mr-4">
             Docs
           </NavLink>
         </li>
 
         <li>
-          <NavLink activeClassName={styles.NavLinkActive} to="/tips" className="navbar-item">
+          <NavLink activeClassName="is-active" to="/tips" className="navbar-item">
             Tips
           </NavLink>
         </li>

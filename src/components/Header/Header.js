@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
-import Docs from "../../views/Docs";
-import Tips from "../../views/Tips";
 import cx from "classnames";
 
 const Header = () => (

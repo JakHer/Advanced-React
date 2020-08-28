@@ -3,8 +3,9 @@ import cx from "classnames";
 import styles from "./Columns.module.scss";
 import withCollapse from "../../hoc/withCollapse";
 import withAuth from "../../hoc/withAuth";
+import { compose } from "recompose";
 
-const Columns = ({ isCollapsed, toggle, isAuthorised, toggleAuth }) => (
+const Columns = ({ isAuthorised, toggleAuth, isCollapsed, toggle }) => (
   <div className={(cx("columns"), styles.Columns)}>
     <button onClick={toggle} className="button is-success">
       {isCollapsed ? "show" : "hide"}
@@ -52,4 +53,4 @@ const Columns = ({ isCollapsed, toggle, isAuthorised, toggleAuth }) => (
   </div>
 );
 
-export default withCollapse(withAuth(Columns));
+export default compose(withCollapse, withAuth)(Columns);

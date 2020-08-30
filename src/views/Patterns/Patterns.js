@@ -19,7 +19,13 @@ const Patterns = () => (
                 .map(({ value }, index) => (
                   <li
                     key={value}
-                    className={cx({ "is-active": value === selectedItem }, "dropdown-item", "is-white", "button")}
+                    className={cx(
+                      { "is-success": highlightedIndex === index },
+                      { "has-text-weight-bold": value === selectedItem },
+                      "dropdown-item",
+                      "is-white",
+                      "button"
+                    )}
                     {...getItemProps({
                       key: value,
                       value,

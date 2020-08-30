@@ -1,3 +1,10 @@
+.Dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .DropdownMenu {
   width: 100%;
 }

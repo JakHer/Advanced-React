@@ -27,6 +27,11 @@ const Header = () => (
             Patterns
           </NavLink>
         </li>
+        <li>
+          <NavLink activeClassName="is-active" to="/components" className="navbar-item">
+            Components
+          </NavLink>
+        </li>
       </ul>
     </nav>
   </div>

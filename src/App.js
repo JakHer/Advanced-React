@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Docs from "./views/Docs";
 import Tips from "./views/Tips";
 import Patterns from "./views/Patterns/Patterns";
+import Components from "./views/Components/Components";
 
 const App = () => (
   <BrowserRouter>
@@ -11,8 +12,9 @@ const App = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Docs} />
-        <Route exact path="/tips" component={Tips} />
-        <Route exact path="/patterns" component={Patterns} />
+        <Route path="/tips" component={Tips} />
+        <Route path="/patterns" component={Patterns} />
+        <Route path="/components" component={Components} />
       </Switch>
     </>
   </BrowserRouter>

@@ -13,3 +13,16 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.ContainerWidth {
+  max-width: 450px;
+}
+
+.WrapperWidth {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+}

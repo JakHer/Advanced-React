@@ -20,8 +20,12 @@ Discovering React's advanced techiques
 - Bulma CSS Framework
 - React Patterns
 - HOC
+  - nesting
 - Render Props
+  - nesting
+  - downshift
 - React Hooks
+  - useState
 
 ## Setup
 

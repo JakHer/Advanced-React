@@ -10,26 +10,31 @@ const Header = () => (
       <p className="subtitle">React is awesome</p>
     </div>
     <nav className={cx("navbar is-expanded", styles.NavBar)} role="navigation" aria-label="main navigation">
-      <ul className={cx(styles.NavBar)}>
-        <li>
-          <NavLink activeClassName="is-active" exact to="/" className="navbar-item navbar-start mr-4">
+      <ul className={cx(styles.NavBarList)}>
+        <li className={styles.NavBarListItem}>
+          <NavLink activeClassName="is-active" exact to="/" className={cx("navbar-item", styles.NavBarItem)}>
             Docs
           </NavLink>
         </li>
 
-        <li>
-          <NavLink activeClassName="is-active" to="/tips" className="navbar-item">
+        <li className={styles.NavBarListItem}>
+          <NavLink activeClassName="is-active" to="/tips" className={cx("navbar-item", styles.NavBarItem)}>
             Tips
           </NavLink>
         </li>
-        <li>
+        <li className={styles.NavBarListItem}>
           <NavLink activeClassName="is-active" to="/patterns" className="navbar-item">
             Patterns
           </NavLink>
         </li>
-        <li>
+        <li className={styles.NavBarListItem}>
           <NavLink activeClassName="is-active" to="/components" className="navbar-item">
             Components
+          </NavLink>
+        </li>
+        <li className={styles.NavBarListItem}>
+          <NavLink activeClassName="is-active" to="/useeffect" className="navbar-item">
+            UseEffect
           </NavLink>
         </li>
       </ul>

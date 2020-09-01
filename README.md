@@ -26,6 +26,8 @@ Discovering React's advanced techiques
   - downshift
 - React Hooks
   - useState
+  - useReducer
+  - useEffect
 
 ## Setup
 

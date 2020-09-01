@@ -3,9 +3,19 @@
 }
 
 .NavBar {
-  width: 100%;
+  width: 100%s;
+}
+
+.NavBarList {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  overflow: auto;
+}
+
+.NavBarList::-webkit-scrollbar {
+  display: none;
+}
+
+.NavBarListItem {
+  margin: 0 10px;
 }

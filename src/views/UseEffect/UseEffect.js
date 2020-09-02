@@ -10,7 +10,7 @@ const UseEffect = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoadingState(true);
-      const response = await axios.get("https://run.mocky.io/v3/bab46a0e-4053-4d1a-bc71-d85af8359d7b");
+      const response = await axios.get("https://run.mocky.io/v3/bab46a0e-4053-4d1a-bc71-d85af8359d7b?mocky-delay=1000ms");
       setItemList(response.data);
       setLoadingState(false);
     };

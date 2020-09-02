@@ -28,6 +28,7 @@ Discovering React's advanced techiques
   - useState
   - useReducer
   - useEffect
+  - useRef
 
 ## Setup
 

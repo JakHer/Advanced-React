@@ -1,0 +1,15 @@
+.Container {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Input {
+  transition: 0.4s ease transform;
+  display: block;
+}
+
+.Button {
+  max-width: 150px;
+}

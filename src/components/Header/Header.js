@@ -37,6 +37,11 @@ const Header = () => (
             UseEffect
           </NavLink>
         </li>
+        <li className={styles.NavBarListItem}>
+          <NavLink activeClassName="is-active" to="/useref" className="navbar-item">
+            UseRef
+          </NavLink>
+        </li>
       </ul>
     </nav>
   </div>

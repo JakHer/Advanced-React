@@ -29,6 +29,7 @@ Discovering React's advanced techiques
   - useReducer
   - useEffect
   - useRef
+- GSAP
 
 ## Setup
 

@@ -1,13 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./UseRef.module.scss";
 import cx from "classnames";
-import TweenMax from "gsap/all";
+import Gsap from "gsap";
 
 const UseRef = () => {
   const buttonAnimation = useRef(null);
 
   useEffect(() => {
-    TweenMax.from(buttonAnimation.current, 2, { x: `-100%`, opacity: 0, scale: 2 });
+    Gsap.from(buttonAnimation.current, 2, { x: `-100%`, opacity: 0, scale: 2 });
   });
 
   return (

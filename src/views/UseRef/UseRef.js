@@ -1,22 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./UseRef.module.scss";
 import cx from "classnames";
+import TweenMax from "gsap/all";
 
 const UseRef = () => {
-  const myInputRef = useRef(null);
+  const buttonAnimation = useRef(null);
 
-  const focusInput = () => {
-    myInputRef.current.focus();
-    myInputRef.current.style.transform = "scaleX(.5) translateX(-50%)";
-  };
+  useEffect(() => {
+    TweenMax.from(buttonAnimation.current, 2, { x: `-100%`, opacity: 0, scale: 2 });
+  });
 
   return (
     <div className={cx("container mt-4", styles.Container)}>
       <h2 className="title is-3">UseRef</h2>
-      <input ref={myInputRef} className={cx("input", styles.Input)} type="text" />
-      <button onClick={focusInput} className={cx("button mt-4", styles.Button)}>
-        focus input
-      </button>
+      <div ref={buttonAnimation} className={styles.Wrapper}></div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import styles from "./UseRef.module.scss";
 import cx from "classnames";
+import Gsap from "gsap";
 import { TimelineMax } from "gsap/gsap-core";
 
 const UseRef = () => {
@@ -14,6 +15,7 @@ const UseRef = () => {
   }, []);
 
   useEffect(() => {
+    Gsap.from(buttonAnimation.current, 4, { x: "-150%", y: "-150%", opacity: 0 });
     isModalOpen ? tl.current.play() : tl.current.reverse();
   }, [isModalOpen]);
 

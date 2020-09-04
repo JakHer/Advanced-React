@@ -6,6 +6,7 @@ import styles from "./UseEffect.module.scss";
 const UseEffect = () => {
   const [itemList, setItemList] = useState([]);
   const [isLoading, setLoadingState] = useState(false);
+  const [isTooltipOpen, toggleTooltip] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,7 +19,15 @@ const UseEffect = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container pl-3 pr-3">
+      <button onClick={() => toggleTooltip(!isTooltipOpen)} className="button is-primary is-large mt-4 mb-4">
+        Open tooltip
+      </button>
+      {isTooltipOpen && (
+        <div class="notification is-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>
+        </div>
+      )}
       <ul className="box">
         <h2 className="title is-3">UseEffect</h2>
         {isLoading && <button className={cx("button is-loading is-large is-info", styles.LoadingButton)}></button>}

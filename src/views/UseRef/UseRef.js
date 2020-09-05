@@ -1,18 +1,18 @@
 import React, { useRef, useEffect, useState } from "react";
+import { DetectClose, ModalAnimation } from "../../hooks/detectClose";
 import styles from "./UseRef.module.scss";
 import cx from "classnames";
 import Gsap from "gsap";
-import { TimelineMax } from "gsap/gsap-core";
 
 const UseRef = () => {
   const buttonAnimation = useRef(null);
   const modalAnimation = useRef(null);
   const tl = useRef(null);
+  const modalRef = useRef(null);
   const [isModalOpen, toggleModal] = useState(true);
 
-  useEffect(() => {
-    tl.current = new TimelineMax({ paused: true }).from([modalAnimation.current], 2, { y: `-200%`, display: "none" });
-  }, []);
+  DetectClose(modalRef, toggleModal);
+  ModalAnimation(tl, modalAnimation);
 
   useEffect(() => {
     Gsap.from(buttonAnimation.current, 4, { x: "-150%", y: "-150%", opacity: 0 });
@@ -26,7 +26,7 @@ const UseRef = () => {
 
       <div ref={modalAnimation} className={cx("modal is-active pr-3 pl-3")}>
         <div className="modal-background"></div>
-        <div className="modal-content">
+        <div ref={modalRef} className="modal-content">
           <article className="message">
             <div className="message-header">
               <p>Hello World</p>

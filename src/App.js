@@ -7,6 +7,7 @@ import Patterns from "./views/Patterns/Patterns";
 import Components from "./views/Components/Components";
 import UseEffect from "./views/UseEffect/UseEffect";
 import UseRef from "./views/UseRef/UseRef";
+import Users from "./views/Users";
 
 const App = () => (
   <BrowserRouter>
@@ -19,6 +20,7 @@ const App = () => (
         <Route path="/components" component={Components} />
         <Route path="/useeffect" component={UseEffect} />
         <Route path="/useref" component={UseRef} />
+        <Route path="/users" component={Users} />
       </Switch>
     </>
   </BrowserRouter>

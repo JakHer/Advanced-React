@@ -42,6 +42,11 @@ const Header = () => (
             UseRef
           </NavLink>
         </li>
+        <li className={styles.NavBarListItem}>
+          <NavLink activeClassName="is-active" to="/users" className="navbar-item">
+            Users
+          </NavLink>
+        </li>
       </ul>
     </nav>
   </div>

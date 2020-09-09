@@ -43,6 +43,7 @@ const Users = () => (
         </div>
       </MultiStep.Page>
       <MultiStep.Controls />
+      <MultiStep.ProgressBar />
     </div>
   </MultiStep.Wizzard>
 );

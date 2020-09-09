@@ -13,7 +13,7 @@ const Page = ({ children, pageIndex }) => {
 };
 
 const Controls = (props) => {
-  const { changePage, currentPage, pageIndexes } = useContext(WizzardContext);
+  const { changePage, currentPage } = useContext(WizzardContext);
 
   return (
     <div {...props} className={cx(styles.ButtonsBox)}>
@@ -73,4 +73,30 @@ const Wizzard = ({ children }) => {
   );
 };
 
-export { Page, Controls, Wizzard };
+const ProgressBar = () => {
+  const { currentPage, pageIndexes } = useContext(WizzardContext);
+
+  let procentageProgress = ((currentPage / 3) * 100).toFixed(0);
+
+  return (
+    <div className={cx(styles.ProgressWrapper)}>
+      {currentPage === 1 || currentPage === 2 ? (
+        <>
+          <progress className={cx("progress is-primary mt-4", styles.ProgressBar)} value={procentageProgress} max="100">
+            {procentageProgress}
+          </progress>
+          <p className={cx("tag is-info", styles.ProgressParagraph)}>{procentageProgress}%</p>
+        </>
+      ) : (
+        <>
+          <progress className={cx("progress is-primary mt-4", styles.ProgressBar)} value="90" max="100">
+            90%
+          </progress>
+          <p className={cx("tag is-info", styles.ProgressParagraph)}>90%</p>
+        </>
+      )}
+    </div>
+  );
+};
+
+export { Page, Controls, Wizzard, ProgressBar };

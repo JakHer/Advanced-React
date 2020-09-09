@@ -29,7 +29,7 @@ const Header = () => (
         </li>
         <li className={styles.NavBarListItem}>
           <NavLink activeClassName="is-active" to="/components" className="navbar-item">
-            Components
+            ToDoList
           </NavLink>
         </li>
         <li className={styles.NavBarListItem}>

@@ -8,5 +8,20 @@
 }
 
 .Button {
-  min-width: 250px;
+  min-width: 50px;
+}
+
+.ProgressParagraph {
+  max-width: 250px;
+}
+
+.ProgressWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProgressBar::-webkit-progress-value {
+  transition: 0.4s ease all;
 }

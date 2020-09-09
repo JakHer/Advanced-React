@@ -10,14 +10,11 @@
   display: flex;
   align-items: center;
   overflow: auto;
+  margin: 0 auto;
 
   @media screen and (min-width: 700px) {
     justify-content: center;
   }
-}
-
-.NavBarList::-webkit-scrollbar {
-  display: none;
 }
 
 .NavBarListItem {

@@ -74,7 +74,7 @@ const Wizzard = ({ children }) => {
 };
 
 const ProgressBar = () => {
-  const { currentPage, pageIndexes } = useContext(WizzardContext);
+  const { currentPage } = useContext(WizzardContext);
 
   let procentageProgress = ((currentPage / 3) * 100).toFixed(0);
 

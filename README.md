@@ -32,6 +32,8 @@ Discovering React's advanced techiques
   - useContext
 - GSAP
 - Compound Components
+- React Testing Libary
+- JEST
 
 ## Setup
 

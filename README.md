@@ -40,9 +40,11 @@ Discovering React's advanced techiques
 To run this project, install it locally using npm:
 
 ```
+
 $ cd ../advanced-react
 $ npm install
 $ npm start
+
 ```
 
 ### `npm start`
